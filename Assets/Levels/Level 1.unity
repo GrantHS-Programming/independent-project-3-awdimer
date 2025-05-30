@@ -7225,7 +7225,7 @@ Transform:
   m_GameObject: {fileID: 1292079897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.11, y: -2.36, z: 1.7761798}
+  m_LocalPosition: {x: 17.36, y: -2.36, z: 1.7761798}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10433,6 +10433,14 @@ PrefabInstance:
     - target: {fileID: 2134803858379414914, guid: 0a92ef6c3728b45959d244cb015da976, type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389301697875783662, guid: 0a92ef6c3728b45959d244cb015da976, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4119549
+      objectReference: {fileID: 0}
+    - target: {fileID: 6389301697875783662, guid: 0a92ef6c3728b45959d244cb015da976, type: 3}
+      propertyPath: m_Offset.x
+      value: 11.168504
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
