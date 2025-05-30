@@ -46,6 +46,12 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
+    
+    public void AddHealthCapacity(float _value)
+    {
+        ///Health++;
+    }
+    
     private IEnumerator Invunerability()
     {
         Physics2D.IgnoreLayerCollision(10, 11, true);
