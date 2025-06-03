@@ -49,7 +49,8 @@ public class Health : MonoBehaviour
     
     public void AddHealthCapacity(float _value)
     {
-        ///Health++;
+        startingHealth++;
+        
     }
     
     private IEnumerator Invunerability()
