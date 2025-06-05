@@ -14,6 +14,7 @@ public class Spikehead : EnemyDamage
     private Vector3 destination;
     private float checkTimer;
     private bool attacking;
+    private SpriteRenderer spriteRend;
 
     private void OnEnable()
     {
@@ -23,8 +24,11 @@ public class Spikehead : EnemyDamage
     private void Update()
     {   
         //only if spikehead is attacking move to detsination
-        if(attacking)
+        if (attacking)
+        {
+            //spriteRend.color = Color.red;
             transform.Translate(destination * Time.deltaTime * speed);
+        }
         else
         {
             checkTimer += Time.deltaTime;
@@ -43,6 +47,7 @@ public class Spikehead : EnemyDamage
 
             if (hit.collider != null && !attacking)
             {
+                
                 attacking = true;
                 destination = directions[i];
                 checkTimer = 0;
@@ -68,6 +73,7 @@ public class Spikehead : EnemyDamage
     private void OnTriggerEnter2D(Collider2D collision)
     {
             base.OnTriggerEnter2D(collision);
+            //spriteRend.color = Color.white;
             Stop();
     }
 }
