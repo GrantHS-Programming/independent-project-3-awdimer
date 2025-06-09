@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
 
     private void Awake()
     {
-        cam = Camera.main.GetComponent<CameraController>();
+        if (Camera.main != null) cam = Camera.main.GetComponent<CameraController>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
