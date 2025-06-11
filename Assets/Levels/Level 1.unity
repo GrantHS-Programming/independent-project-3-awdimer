@@ -6026,6 +6026,8 @@ GameObject:
   - component: {fileID: 863530488}
   - component: {fileID: 863530487}
   - component: {fileID: 863530489}
+  - component: {fileID: 863530491}
+  - component: {fileID: 863530490}
   m_Layer: 0
   m_Name: MeleeEnemy
   m_TagString: Untagged
@@ -6166,6 +6168,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5721185, y: 1.367963}
   m_EdgeRadius: 0
+--- !u!114 &863530490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863530485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f926e7e33b447d29ee41ac097703c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1
+  range: 3
+  colliderDistance: 0.25
+  damage: 2
+  boxCollider: {fileID: 863530489}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &863530491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863530485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69d170f364384844bf748428fc27442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &867705563
 GameObject:
   m_ObjectHideFlags: 0
